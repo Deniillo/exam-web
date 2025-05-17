@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: library-application
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 40MB
+      max-request-size: 40MB
+
+logging:
+  level:
+    root: INFO # уровень логирования по умолчанию
+    itmo.denilll: DEBUG # логирование для пакета
+    org:
+      springframework:
+        .web: DEBUG
+
+server:
+  port: 8080
+
+my-service:
+  url: http://localhost:8080
